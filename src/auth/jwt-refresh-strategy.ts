@@ -31,9 +31,7 @@ export class JwtRefreshAuthStrategy extends PassportStrategy(Strategy, 'jwt-refr
         if (!user) {
             throw new UnauthorizedException();
         }
-
         
-
         return user;
     }
 }
